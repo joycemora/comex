@@ -1,0 +1,37 @@
+package br.com.alura.comex.modelo;
+
+public class cliente {
+
+    private String nome;
+    private String  cpf ;
+    private String   email ;
+    private String profissao;
+    private String telefone;
+    private endereco endereco;
+
+    public cliente(String cpf , String email, String telefone, String nome, String profissao,endereco endereco) {
+        this.cpf = cpf;
+        this.email=email;
+        this.telefone=telefone;
+        this.nome=nome;
+        this.profissao=profissao;
+        this.endereco=endereco;
+
+
+
+        }
+
+    @Override
+    public String toString() {
+        return "cliente{" +
+                "nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", email='" + email + '\'' +
+                ", profissao='" + profissao + '\'' +
+                ", telefone='" + telefone + '\'' +
+                ", endereco=" + endereco +
+                '}';
+    }
+}
+
+
